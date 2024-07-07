@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 def display_current_datetime():
     global current_date
@@ -6,7 +6,7 @@ def display_current_datetime():
     print(f"Current date and time: {current_date}")
 
 
-number_of_days = datetime.timedelta(int(input("Enter the number of days to add to the current date: ")))
+number_of_days = datetime.timedelta(input("Enter the number of days to add to the current date: "))
 def calculate_future_date():
     future_date = current_date + number_of_days
     print(f"Future date: {future_date}") 
