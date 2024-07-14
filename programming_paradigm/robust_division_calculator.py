@@ -4,7 +4,6 @@ def safe_divide(numerator, denominator):
     try:
         result = numerator/denominator
         print(f"The result of the division is {result}")
-        return result
         
     except ZeroDivisionError:
         print(f"Error: Cannot divide by zero.")
